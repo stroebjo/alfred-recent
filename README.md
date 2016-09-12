@@ -5,7 +5,7 @@ By providing a Keyword (the App name i.e.) it will show you the recently used fi
 
 Additionally the recently used files can be filtered using text input.
 
-![Preview of textedit](https://github.com/stroebjo/alfred-recent/docs/alfred-recent.png)
+![Preview of textedit](docs/alfred-recent.png)
 
 After you install the Workflow it is set to work with TextEdit, [MindNode](https://mindnode.com/), [OmniGraffle](https://www.omnigroup.com/omnigraffle) and [iA Writer](https://ia.net/writer). After installing the Workflow you can configure other Apps. Explanation are inside the Workflow.
 
