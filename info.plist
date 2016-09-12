@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>de.jonathanstroebele.alfred-recent</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>002F8852-7B0B-4250-B48F-9717BABCB0EC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>805A928E-455A-4059-B23C-1CE2B6B5A1C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>05DB5A47-3989-4EE2-886B-2DB117D29DC1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>805A928E-455A-4059-B23C-1CE2B6B5A1C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1646E590-C9F9-4990-AA56-007234F04C07</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>805A928E-455A-4059-B23C-1CE2B6B5A1C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F0EE703E-F5D2-4B2C-9565-70A946FF5BE3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FDEED86E-C282-4E5C-A479-2410F718B464</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Jonathan Ströbele</string>
+	<key>description</key>
+	<string>Shows the recently used file by an directly in Alfred.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Recently used files by an App</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>64</integer>
+				<key>keyword</key>
+				<string>textedit</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetched recently used files…</string>
+				<key>script</key>
+				<string>#
+# To get the bundle ID use this AppleScript `$ osascript -e 'id of app "Finder"'`
+# Switch "Finder" with actual file name of the App.
+#
+# recent.py &lt;app bunlde id&gt; [{query for string filtering filtering}]
+# 
+python ./recent.py "com.apple.textedit" {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Recently used files</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>002F8852-7B0B-4250-B48F-9717BABCB0EC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>64</integer>
+				<key>keyword</key>
+				<string>mindnode</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetched recently used files…</string>
+				<key>script</key>
+				<string># recent.py &lt;app bunlde id&gt; [{query for filtering}]
+python ./recent.py "com.ideasoncanvas.mindnodemac" {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Recently used files</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>05DB5A47-3989-4EE2-886B-2DB117D29DC1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>805A928E-455A-4059-B23C-1CE2B6B5A1C8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>64</integer>
+				<key>keyword</key>
+				<string>omnigraffle</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetched recently used files…</string>
+				<key>script</key>
+				<string># recent.py &lt;app bunlde id&gt; [{query for filtering}]
+python ./recent.py "com.omnigroup.omnigraffle6" {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Recently used files</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1646E590-C9F9-4990-AA56-007234F04C07</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/Applications/iA Writer.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>FDEED86E-C282-4E5C-A479-2410F718B464</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>64</integer>
+				<key>keyword</key>
+				<string>writer</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetched recently used files…</string>
+				<key>script</key>
+				<string># recent.py &lt;app bunlde id&gt; [{query for filtering}]
+python ./recent.py "pro.writer.mac" {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Recently used files</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F0EE703E-F5D2-4B2C-9565-70A946FF5BE3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>002F8852-7B0B-4250-B48F-9717BABCB0EC</key>
+		<dict>
+			<key>note</key>
+			<string>To show recently used files for another app:
+
+1. Copy this task
+2. Change the keyword to the name of the App
+3. Drag the App.app into the icon placeholder
+3. Set the bundle id of the app (see Script section)
+4. Connect copied task with the Open File Action
+
+ATTENTION: this will only work if the app uses the osx system functions for recently used files. MS Office i.e. doesn't work.</string>
+			<key>xpos</key>
+			<integer>100</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
+		<key>05DB5A47-3989-4EE2-886B-2DB117D29DC1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>1646E590-C9F9-4990-AA56-007234F04C07</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>805A928E-455A-4059-B23C-1CE2B6B5A1C8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>750</integer>
+			<key>ypos</key>
+			<integer>150</integer>
+		</dict>
+		<key>F0EE703E-F5D2-4B2C-9565-70A946FF5BE3</key>
+		<dict>
+			<key>note</key>
+			<string>If the default application wich would open the file is not the desired application, copy the "open file" action and force it to open in the specific app by droping it into the open with panel.</string>
+			<key>xpos</key>
+			<integer>100</integer>
+			<key>ypos</key>
+			<integer>450</integer>
+		</dict>
+		<key>FDEED86E-C282-4E5C-A479-2410F718B464</key>
+		<dict>
+			<key>xpos</key>
+			<integer>750</integer>
+			<key>ypos</key>
+			<integer>450</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>0.1.0</string>
+	<key>webaddress</key>
+	<string>http://jonathanstroebele.de</string>
+</dict>
+</plist>
