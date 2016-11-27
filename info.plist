@@ -47,6 +47,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>29CE4FB4-3C72-4E45-8ED3-9FDAE9CACF48</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A701FEF1-ABD1-41FF-8CA8-6E1D976D02BE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F0EE703E-F5D2-4B2C-9565-70A946FF5BE3</key>
 		<array>
 			<dict>
@@ -142,7 +155,12 @@ python ./recent.py "com.apple.textedit" {query}</string>
 				<key>runningsubtext</key>
 				<string>Fetched recently used files…</string>
 				<key>script</key>
-				<string># recent.py &lt;app bunlde id&gt; [{query for filtering}]
+				<string>#
+# To get the bundle ID use this AppleScript `$ osascript -e 'id of app "Finder"'`
+# Switch "Finder" with actual file name of the App.
+#
+# recent.py &lt;app bunlde id&gt; [{query for string filtering filtering}]
+#
 python ./recent.py "com.ideasoncanvas.mindnodemac" {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -201,7 +219,12 @@ python ./recent.py "com.ideasoncanvas.mindnodemac" {query}</string>
 				<key>runningsubtext</key>
 				<string>Fetched recently used files…</string>
 				<key>script</key>
-				<string># recent.py &lt;app bunlde id&gt; [{query for filtering}]
+				<string>#
+# To get the bundle ID use this AppleScript `$ osascript -e 'id of app "Finder"'`
+# Switch "Finder" with actual file name of the App.
+#
+# recent.py &lt;app bunlde id&gt; [{query for string filtering filtering}]
+#
 python ./recent.py "com.omnigroup.omnigraffle6" {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -260,7 +283,12 @@ python ./recent.py "com.omnigroup.omnigraffle6" {query}</string>
 				<key>runningsubtext</key>
 				<string>Fetched recently used files…</string>
 				<key>script</key>
-				<string># recent.py &lt;app bunlde id&gt; [{query for filtering}]
+				<string>#
+# To get the bundle ID use this AppleScript `$ osascript -e 'id of app "Finder"'`
+# Switch "Finder" with actual file name of the App.
+#
+# recent.py &lt;app bunlde id&gt; [{query for string filtering filtering}]
+#
 python ./recent.py "pro.writer.mac" {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -279,6 +307,70 @@ python ./recent.py "pro.writer.mac" {query}</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>F0EE703E-F5D2-4B2C-9565-70A946FF5BE3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>~/Applications/Tower.app</string>
+				<key>sourcefile</key>
+				<string></string>
+		</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>A701FEF1-ABD1-41FF-8CA8-6E1D976D02BE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>64</integer>
+				<key>keyword</key>
+				<string>tower</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetched recently used files…</string>
+				<key>script</key>
+				<string>#
+# To get the bundle ID use this AppleScript `$ osascript -e 'id of app "Finder"'`
+# Switch "Finder" with actual file name of the App.
+#
+# recent.py &lt;app bunlde id&gt; [{query for string filtering filtering}]
+#
+python ./recent.py "com.fournova.Tower2" {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Recently used files</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>29CE4FB4-3C72-4E45-8ED3-9FDAE9CACF48</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -318,12 +410,26 @@ ATTENTION: this will only work if the app uses the osx system functions for rece
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
+		<key>29CE4FB4-3C72-4E45-8ED3-9FDAE9CACF48</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>560</integer>
+		</dict>
 		<key>805A928E-455A-4059-B23C-1CE2B6B5A1C8</key>
 		<dict>
 			<key>xpos</key>
 			<integer>750</integer>
 			<key>ypos</key>
 			<integer>150</integer>
+		</dict>
+		<key>A701FEF1-ABD1-41FF-8CA8-6E1D976D02BE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>750</integer>
+			<key>ypos</key>
+			<integer>560</integer>
 		</dict>
 		<key>F0EE703E-F5D2-4B2C-9565-70A946FF5BE3</key>
 		<dict>
