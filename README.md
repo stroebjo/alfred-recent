@@ -1,5 +1,8 @@
 # Recently used files
 
+
+**Attention**: in macOS High Sierra (10.13.x) Apple used a new format to store the recently used files (`.sfl2`). This workflow does no longer work on High Sierre and up. I didn't found a solution to this, if you have please contribute in the [issue](https://github.com/stroebjo/alfred-recent/issues/1).
+
 This workflow for [Alfred 3](https://www.alfredapp.com/) allows you to search through the recently used files by macOS Apps which use the _Recent Items_ set in the System Preferences.
 By providing a Keyword (the App name i.e.) it will show you the recently used files by this App inside Alfred to open them directly or show them in the Finder (`cmd` modifer).
 
@@ -17,7 +20,7 @@ Just [download the Workflow here](https://github.com/stroebjo/alfred-recent/rele
 
 ## Limitations
 
-It only works only on macOS 10.11 El Capitan and above. It requires Alfred 3. Also not all Apps use this mechanism provided by macOS. For example Adobe and Microsoft Office Apps use their own implementation for recently used files. To get recently used files by Office you can use [my other Alfred Workflow](https://github.com/stroebjo/alfred-recent-office).
+It only works only on macOS 10.11 El Capitan and 10.12. It requires Alfred 3. Also not all Apps use this mechanism provided by macOS. For example Adobe and Microsoft Office Apps use their own implementation for recently used files. To get recently used files by Office you can use [my other Alfred Workflow](https://github.com/stroebjo/alfred-recent-office).
 
 
 ## Motivation
