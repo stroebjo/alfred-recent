@@ -1,5 +1,7 @@
 # Recently used files
 
+---
+
 > :warning: **Attention**: in macOS High Sierra (10.13.x) Apple used a new format to store the recently used files (`.sfl2`). This workflow does no longer work on High Sierre and up. I didn't found a solution to this, if you have please contribute in the [issue](https://github.com/stroebjo/alfred-recent/issues/1). As a workaround, checkout the [native Alfred recent file navigation](https://www.alfredapp.com/help/features/file-search/#recent-docs). 
 
 ---
